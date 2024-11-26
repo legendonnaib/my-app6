@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import Categories from "./components/Categories";
 import Achievements from "./components/Achievements";
 import Courses from "./components/Courses";
+import Down from "./components/Down";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Categories />
       <Achievements/>
       <Courses/>
+      <Down />
       
      
     </div>
