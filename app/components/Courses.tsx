@@ -101,7 +101,7 @@ export default function Courses() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {courses.map((courses1, index) => (
+        {courses1.map((courses1, index) => (
           <div key={index} className="bg-white shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-bold">{courses1.title}</h3>
             <p className="text-gray-600">{courses1.price}</p>

@@ -82,8 +82,7 @@ export default function Page() {
               className="mx-auto"
             />
           </div>
-          {/* Quote */}
-          <p className="text-gray-600 italic mb-4">"{testimonial.quote}"</p>
+         <p className="text-gray-600 italic mb-4">{testimonial.quote}</p>
           {/* User Info */}
           <div className="flex items-center space-x-4">
             <Image
