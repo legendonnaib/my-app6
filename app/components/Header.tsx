@@ -64,7 +64,7 @@ export default function Header() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative mt-2 px-4">
+      <div className="relative mt-2 px-2">
         <Image
           src="/images/Header.png"
           alt="head-img"
