@@ -4,7 +4,7 @@ export default function Header() {
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between p-4">
         <div className="flex items-center space-x-4 mb-4 sm:mb-0">
           <Image src="/images/Dsngr.png" alt="logo" width={35} height={35} className="w-8 h-8" />
-          <h1 className="text-xl font-bold">Ddgnr</h1>
+          <h1 className="text-xl font-bold">Ddsgnr</h1>
         </div>
 
         <nav className="hidden sm:block">
