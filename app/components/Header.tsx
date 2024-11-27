@@ -11,13 +11,13 @@ export default function Header() {
             alt="logo-img"
             width={35}
             height={35}
-            className="object-contain"
+            className="object-contain w-8 h-8 md:w-10 md:h-10"
           />
-          <h1 className="text-lg font-bold">Dodgxr</h1>
+          <h1 className="text-base md:text-lg font-bold">Dodgxr</h1>
         </div>
 
         {/* Navigation for Larger Screens */}
-        <nav className="hidden sm:block">
+        <nav className="hidden sm:flex">
           <ul className="flex space-x-6">
             <li>
               <a href="#" className="hover:text-blue-500">
@@ -64,13 +64,13 @@ export default function Header() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full h-auto mt-4 px-6">
+      <div className="relative w-full mt-4 px-4">
         <Image
           src="/images/Header.png"
           alt="head-img"
           width={700}
           height={400}
-          className="w-full h-auto max-w-screen-md mx-auto object-contain"
+          className="w-full h-auto md:max-w-screen-md mx-auto object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center px-4">
           <button
