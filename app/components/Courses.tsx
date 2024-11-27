@@ -14,102 +14,96 @@ export default function Courses() {
   ];
 
   return (
-    <section className="container mx-auto py-16">
+    <section className="container mx-auto py-16 px-4">
       <h2 className="text-3xl font-bold text-center mb-8">Courses</h2>
 
-
-      <div className="flex justify-left gap-8 mb-19">
-       
-
-        <div className="flex-shrink-0">
+      {/* Image Row */}
+      <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex-shrink-0 w-full sm:w-auto">
           <Image
             src={"/images/laptopscreen.png"}
             alt="Laptop Screen"
             width={300}
             height={400}
-            className="object-contain"
+            className="object-contain mx-auto"
           />
         </div>
-        <div className="flex-shrink-0 justify-center">
+        <div className="flex-shrink-0 w-full sm:w-auto">
           <Image
             src={"/images/coding.png"}
             alt="Coding"
             width={320}
             height={420}
-            className="object-contain"
+            className="object-contain mx-auto"
           />
         </div>
-
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 w-full sm:w-auto">
           <Image
             src={"/images/graph.png"}
-            alt="Coding"
+            alt="Graph"
             width={320}
             height={420}
-            className="object-contain"
+            className="object-contain mx-auto"
           />
         </div>
-      
-    
       </div>
 
-
-      
-
-    
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* Courses Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         {courses.map((course, index) => (
           <div key={index} className="bg-white shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-bold">{course.title}</h3>
             <p className="text-gray-600">{course.price}</p>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">View Details</button>
+            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">
+              View Details
+            </button>
           </div>
-
         ))}
       </div>
-      <div className="flex justify-left gap-8 mb-19">
-      <div className="flex-shrink-0">
+
+      {/* Second Image Row */}
+      <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex-shrink-0 w-full sm:w-auto">
           <Image
             src={"/images/paintbrush.png"}
-            alt="art"
+            alt="Art"
             width={320}
             height={420}
-            className="object-contain"
+            className="object-contain mx-auto"
           />
         </div>
-
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 w-full sm:w-auto">
           <Image
             src={"/images/library.png"}
-            alt="law"
+            alt="Library"
             width={320}
             height={420}
-            className="object-contain"
+            className="object-contain mx-auto"
           />
         </div>
-
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 w-full sm:w-auto">
           <Image
             src={"/images/website.png"}
-            alt="web"
+            alt="Website"
             width={320}
             height={420}
-            className="object-contain"
+            className="object-contain mx-auto"
           />
         </div>
+      </div>
 
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {courses1.map((courses1, index) => (
+      {/* Second Courses Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {courses1.map((course, index) => (
           <div key={index} className="bg-white shadow-lg p-6 rounded-lg">
-            <h3 className="text-xl font-bold">{courses1.title}</h3>
-            <p className="text-gray-600">{courses1.price}</p>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">View Details</button>
+            <h3 className="text-xl font-bold">{course.title}</h3>
+            <p className="text-gray-600">{course.price}</p>
+            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">
+              View Details
+            </button>
           </div>
-
         ))}
-        </div>
+      </div>
     </section>
   );
 }
