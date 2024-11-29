@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="bg-white shadow-md relative overflow-hidden">
-      {/* Header Container */}
+     
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        {/* Logo and Title */}
+     
         <div className="flex items-center space-x-4">
           <Image
             src={"/images/Dsngr.png"}
