@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md relative">
-     
+    <header className="bg-white shadow-md relative overflow-hidden">
+      {/* Header Container */}
       <div className="container mx-auto flex items-center justify-between py-4 px-4 sm:px-6">
-       
+        {/* Logo and Title */}
         <div className="flex items-center space-x-4">
           <Image
             src={"/images/Dsngr.png"}
@@ -17,7 +17,7 @@ export default function Header() {
           <h1 className="text-lg font-bold">Dodgxr</h1>
         </div>
 
-        
+        {/* Navigation Menu */}
         <nav className="hidden sm:block">
           <ul className="flex space-x-6">
             <li>
@@ -43,7 +43,7 @@ export default function Header() {
           </ul>
         </nav>
 
-       
+        {/* Mobile Menu Button */}
         <div className="block sm:hidden">
           <button className="text-blue-500">
             <svg
@@ -64,7 +64,7 @@ export default function Header() {
         </div>
       </div>
 
-      
+      {/* Hero Section with Header Image */}
       <div className="relative w-full h-[50vh] sm:h-[60vh] overflow-hidden">
         <Image
           src="/images/Header.png"
