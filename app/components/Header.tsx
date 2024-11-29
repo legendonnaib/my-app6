@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md relative">
-      <div className="container mx-auto flex flex-wrap items-center justify-between py-4 px-6">
+    <header className="bg-white shadow-md relative overflow-hidden">
+      {/* Header Container */}
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo and Title */}
         <div className="flex items-center space-x-4">
           <Image
@@ -16,7 +17,7 @@ export default function Header() {
           <h1 className="text-lg font-bold">Dodgxr</h1>
         </div>
 
-        
+       
         <nav className="hidden sm:block">
           <ul className="flex space-x-6">
             <li>
@@ -63,8 +64,8 @@ export default function Header() {
         </div>
       </div>
 
-      
-      <div className="absolute right-0 top-16 sm:top-12 lg:top-0 w-full sm:w-[80%] md:w-[70%] lg:w-[40%] h-auto px-4 sm:px-0">
+     
+      <div className="absolute right-0 top-16 sm:top-12 lg:top-0 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[40%] h-auto px-4 sm:px-0 overflow-hidden max-w-full">
         <Image
           src="/images/Header.png"
           alt="header"
