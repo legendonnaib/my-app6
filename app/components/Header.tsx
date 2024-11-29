@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md relative overflow-hidden">
-     
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
-     
+    <header className="bg-white shadow-md relative overflow-x-hidden">
+      {/* Header Container */}
+      <div className="container mx-auto flex items-center justify-between py-4 px-4 sm:px-6">
+        {/* Logo and Title */}
         <div className="flex items-center space-x-4">
           <Image
             src={"/images/Dsngr.png"}
@@ -64,12 +64,12 @@ export default function Header() {
         </div>
       </div>
 
-     
-      <div className="absolute right-0 top-16 sm:top-12 lg:top-0 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[40%] h-auto px-4 sm:px-0 overflow-hidden max-w-full">
+      
+      <div className="absolute right-0 top-16 sm:top-12 lg:top-0 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[40%] h-auto px-4 sm:px-0 max-w-full">
         <Image
           src="/images/Header.png"
           alt="header"
-          layout="responsive"
+          layout="intrinsic"
           width={428}
           height={390}
           className="object-contain"
