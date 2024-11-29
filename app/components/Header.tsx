@@ -1,47 +1,77 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
-    <header className="bg-white shadow-md w-full">
-      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between p-4">
-        <div className="flex items-center space-x-4 mb-4 sm:mb-0">
-          <Image src="/images/Dsngr.png" alt="logo" width={35} height={35} className="w-8 h-8" />
-          <h1 className="text-xl font-bold">Ddsgnr</h1>
+    <header className="bg-white shadow-md">
+     
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+     
+        <div className="flex items-center space-x-4">
+          <Image
+            src={"/images/Dsngr.png"}
+            alt="logo-img"
+            width={35}
+            height={35}
+            className="object-contain"
+          />
+          <h1 className="text-lg font-bold">Dodgxr</h1>
         </div>
 
+ 
         <nav className="hidden sm:block">
           <ul className="flex space-x-6">
-            {["Home", "Courses", "About", "Contact"].map((item) => (
-              <li key={item}>
-                <a href="#" className="hover:text-blue-500">{item}</a>
-              </li>
-            ))}
+            <li>
+              <a href="#" className="hover:text-blue-500">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-500">
+                Courses
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-500">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-500">
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
 
-        <div className="sm:hidden w-full">
-          <nav className="flex flex-col space-y-2">
-            {["Home", "Courses", "About", "Contact"].map((item) => (
-              <a key={item} href="#" className="text-center py-2 hover:bg-gray-100 rounded">
-                {item}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </div>
-
-      <div className="relative mt-4 px-4">
-        <Image
-          src="/images/Header.png"
-          alt="header"
-          width={700}
-          height={400}
-          className="w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <button className="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-lg text-sm sm:text-base">
-            Contact Us
+        <div className="block sm:hidden">
+          <button className="text-blue-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
           </button>
         </div>
       </div>
+    
+      {/*justify-right absolute w-1/3 pt-[64px] pr-[24px] pl-[24px] pb-[64px]*/}
+      <div className="absolute right-0 down-2 w-[88%] sm:w-[80%] md:w-[80%] lg:w-[40vw] xl:w-[27vw] h-auto">
+        <Image
+          src="/images/Header.png"
+          alt="header"
+          width={428}
+          height={390}
+        />
+        </div>
     </header>
   );
 }
