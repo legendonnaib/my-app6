@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md relative overflow-hidden">
+    <header className="bg-white shadow-md relative overflow-x-hidden">
       {/* Header Container */}
       <div className="container mx-auto flex items-center justify-between py-4 px-4 sm:px-6">
         {/* Logo and Title */}
@@ -64,14 +64,15 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Hero Section with Header Image */}
-      <div className="relative w-full h-[50vh] sm:h-[60vh] overflow-hidden">
+      {/* Header Image */}
+      <div className="absolute right-0 top-16 sm:top-12 lg:top-0 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[40%] h-auto px-4 sm:px-0 max-w-full">
         <Image
           src="/images/Header.png"
           alt="header"
-          layout="fill"
-          objectFit="cover"
-          className="object-center"
+          layout="intrinsic"
+          width={428}
+          height={390}
+          className="object-contain"
         />
       </div>
     </header>
