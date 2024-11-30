@@ -2,79 +2,41 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md relative overflow-x-hidden">
-      {/* Header Container */}
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 sm:px-6">
-        {/* Logo and Title */}
-        <div className="flex items-center space-x-4">
-          <Image
-            src={"/images/Dsngr.png"}
-            alt="logo-img"
-            width={35}
-            height={35}
-            className="object-contain"
-          />
-          <h1 className="text-lg font-bold">Dodgxr</h1>
-        </div>
-
-        {/* Navigation Menu */}
-        <nav className="hidden sm:block">
-          <ul className="flex space-x-6">
-            <li>
-              <a href="#" className="hover:text-blue-500">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500">
-                Courses
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500">
-                Contact
-              </a>
-            </li>
-          </ul>
+<header className="bg-white shadow-sm">
+        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 justify-between items-center">
+            <div className="flex-shrink-0">
+              <span className="text-xl font-bold">Logo</span>
+            </div>
+            
+            <div className="hidden md:flex md:space-x-8">
+              {['Home', 'Courses', 'About', 'Contact'].map((item) => (
+                <button key={item} className="text-gray-600 hover:text-gray-900">
+                  {item}
+                </button>
+              ))}
+            </div>
+            
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
+          </div>
+          
+          {isOpen && (
+            <div className="md:hidden py-2">
+              <div className="flex flex-col space-y-2 pb-3">
+                {['Home', 'Courses', 'About', 'Contact'].map((item) => (
+                  <button key={item} className="text-gray-600 hover:text-gray-900 px-2 py-1">
+                    {item}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </nav>
-
-        {/* Mobile Menu Button */}
-        <div className="block sm:hidden">
-          <button className="text-blue-500">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {/* Header Image */}
-      <div className="absolute right-0 top-16 sm:top-12 lg:top-0 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[40%] h-auto px-4 sm:px-0 max-w-full">
-        <Image
-          src="/images/Header.png"
-          alt="header"
-          layout="intrinsic"
-          width={428}
-          height={390}
-          className="object-contain"
-        />
-      </div>
-    </header>
+      </header>
   );
 }
