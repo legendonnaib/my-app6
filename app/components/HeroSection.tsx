@@ -16,7 +16,7 @@ export default function HeroSection() {
               </div>
              <div className="grid gap-10 md:grid-cols-2 md:items-center">
                   <img
-                    src="/api/placeholder/600/800"
+                    src="/images/Header.png"
                     alt="Student with folder"
                     className="rounded-lg shadow-lg w-full object-cover"
                   />
