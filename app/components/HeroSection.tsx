@@ -14,15 +14,13 @@ export default function HeroSection() {
                  Enroll in a variety of courses to learn and grow, anywhere, anytime.
                 </p>
               </div>
-              <div className="flex justify-center lg:justify-end">
-                <div className="relative w-full max-w-md">
+             <div className="grid gap-10 md:grid-cols-2 md:items-center">
                   <img
                     src="/api/placeholder/600/800"
                     alt="Student with folder"
                     className="rounded-lg shadow-lg w-full object-cover"
                   />
                 </div>
-              </div>
             </div>
           </div>
         </section>
