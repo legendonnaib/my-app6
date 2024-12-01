@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <main className="flex-grow">
@@ -11,9 +13,11 @@ export default function HeroSection() {
           </p>
         </div>
         <div>
-          <img
+          <Image
             src="/images/Header.png"
             alt="Student with folder"
+            width={800} // Adjust the width to your actual image dimensions
+            height={600} // Adjust the height to your actual image dimensions
             className="rounded-lg shadow-lg w-full object-cover"
           />
         </div>
