@@ -18,7 +18,7 @@ export default function Header() {
           <h1 className="text-lg font-bold">Dodgxr</h1>
         </div>
 
-        {/* Navigation Links */}
+        
         <nav className="hidden sm:block">
           <ul className="flex space-x-6">
             <li>
@@ -44,7 +44,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        {/* Mobile Menu Button */}
+        
         <div className="block sm:hidden">
           <button className="text-blue-500">
             <svg
