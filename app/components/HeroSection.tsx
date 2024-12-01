@@ -3,7 +3,7 @@ export default function HeroSection() {
 
       <main className="flex-grow">
        
-        <section className="py-12 sm:py-16 lg:py-20">
+        <section className="className="grid gap-10 md:grid-cols-2 md:items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="text-center lg:text-left">
@@ -14,7 +14,7 @@ export default function HeroSection() {
                  Enroll in a variety of courses to learn and grow, anywhere, anytime.
                 </p>
               </div>
-             <div className="grid gap-10 md:grid-cols-2 md:items-center">
+             <div>
                   <img
                     src="/images/Header.png"
                     alt="Student with folder"
@@ -23,7 +23,7 @@ export default function HeroSection() {
                 </div>
             </div>
           </div>
-              <div className="grid gap-10 md:grid-cols-2 md:items-center">
+              <div className="grid gap-8 md:grid-cols-2 md:items-center">
                   <img
                     src="/images/Header.png"
                     alt="Student with folder"
