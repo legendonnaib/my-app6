@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Menu, X } from "react-icons/heroicons";
 
@@ -21,7 +23,7 @@ export default function Header() {
             ))}
           </div>
 
-          
+         
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
