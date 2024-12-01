@@ -14,16 +14,9 @@ export default function HeroSection() {
                  Enroll in a variety of courses to learn and grow, anywhere, anytime.
                 </p>
               </div>
-             <div>
-                  <img
-                    src="/images/Header.png"
-                    alt="Student with folder"
-                    className="rounded-lg shadow-lg w-full object-cover"
-                  />
-                </div>
             </div>
           </div>
-              <div className="grid gap-8 md:grid-cols-2 md:items-center">
+              <div>
                   <img
                     src="/images/Header.png"
                     alt="Student with folder"
