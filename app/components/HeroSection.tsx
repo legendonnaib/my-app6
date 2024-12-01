@@ -16,8 +16,8 @@ export default function HeroSection() {
           <Image
             src="/images/Header.png"
             alt="Student with folder"
-            width={800} // Adjust the width to your actual image dimensions
-            height={600} // Adjust the height to your actual image dimensions
+            width={800} 
+            height={600}
             className="rounded-lg shadow-lg w-full object-cover"
           />
         </div>
