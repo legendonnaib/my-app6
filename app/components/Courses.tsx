@@ -17,7 +17,7 @@ export default function Courses() {
     <section className="container mx-auto py-16 px-4">
       <h2 className="text-3xl font-bold text-center mb-8">Courses</h2>
 
-      {/* Image Row */}
+      
       <div className="flex flex-wrap justify-center gap-4 mb-8">
         <div className="flex-shrink-0 w-full sm:w-auto">
           <Image
@@ -48,7 +48,7 @@ export default function Courses() {
         </div>
       </div>
 
-      {/* Courses Grid */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         {courses.map((course, index) => (
           <div key={index} className="bg-white shadow-lg p-6 rounded-lg">
@@ -61,7 +61,7 @@ export default function Courses() {
         ))}
       </div>
 
-      {/* Second Image Row */}
+      
       <div className="flex flex-wrap justify-center gap-4 mb-8">
         <div className="flex-shrink-0 w-full sm:w-auto">
           <Image
@@ -92,7 +92,7 @@ export default function Courses() {
         </div>
       </div>
 
-      {/* Second Courses Grid */}
+     
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {courses1.map((course, index) => (
           <div key={index} className="bg-white shadow-lg p-6 rounded-lg">
