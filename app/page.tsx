@@ -14,7 +14,7 @@ export default function Home() {
       <Categories />
       <Achievements/>
       <Courses/>
-      <Footer />
+      <Footer/>
       
      
     </div>
