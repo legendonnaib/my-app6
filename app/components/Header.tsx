@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "react-icons/heroicons";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
